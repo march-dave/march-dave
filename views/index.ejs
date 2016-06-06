@@ -2,98 +2,97 @@
 <html lang="en" class="no-js">
 <head>
 	<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Dave Lee: Protfolio</title>
-		<meta name="description" content="My portfolio" />
-		<meta name="keywords" content="Angular js, jquery, CSS, gulp, React js, Fulx, Redux, MongoDB, Node js, Express, chai, mocha, travis, iconic, bower, SASS" />
-		<meta name="author" content="Dave Lee" />
-		<link rel="shortcut icon" href="../favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-		<script src="js/modernizr.custom.js"></script>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dave Lee: Protfolio</title>
+	<meta name="description" content="My portfolio" />
+	<meta name="keywords" content="Angular js, jquery, CSS, gulp, React js, Fulx, Redux, MongoDB, Node js, Express, chai, mocha, travis, iconic, bower, SASS" />
+	<meta name="author" content="Dave Lee" />
+	<link rel="shortcut icon" href="../favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr.custom.js"></script>
 </head>
 <body>
-		<div class="container">
-			<header class="clearfix">
-				<span>My way <span class="bp-icon bp-icon-about" data-content="This is my web site and experience with javascript."></span></span>
-				<h1>Dave Lee's Gallery</h1>
+	<div class="container">
+		<header class="clearfix">
+			<span>My way <span class="bp-icon bp-icon-about" data-content="This is my web site and experience with javascript."></span></span>
+			<h1>Dave Lee's Gallery</h1>
+			<nav>
+				<a href="" class="bp-icon bp-icon-prev" data-info="previous Blueprint"><span>Previous Blueprint</span></a>
+				<a href="" class="bp-icon bp-icon-drop" data-info="back to the Codrops article"><span>back to the Codrops article</span></a>
+				<a href="" class="bp-icon bp-icon-archive" data-info="Blueprints archive"><span>Go to the archive</span></a>
+			</nav>
+		</header>
+		<div id="grid-gallery" class="grid-gallery">
+			<section class="grid-wrap">
+				<ul class="grid">
+					<li class="grid-sizer"></li><!-- for Masonry column width -->
+					<li>
+						<figure>
+							<img src="img/thumb/1.png" alt="img01"/>
+							<figcaption><h3>Angular JS</h3><p>Angular js, node js, mongo db, Firebase, Moach, chai</p></figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure>
+							<img src="img/thumb/1.png" alt="img01"/>
+							<figcaption><h3>React JS</h3><p>React js, React native, Flux, Redux</p></figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure>
+							<img src="img/thumb/1.png" alt="img01"/>
+							<figcaption><h3>Vanilla JS</h3><p>Vanilla JS, JSON, ES5, ES6, Html, CSS, jquery</p></figcaption>
+						</figure>
+					</li>
+				</ul>
+			</section><!-- // grid-wrap -->
+			<section class="slideshow">
+				<ul>
+					<li>
+						<figure>
+							<figcaption>
+								<h3>Angular JS</h3>
+								<p>Javascript MVC framework</p>
+							</figcaption>
+							<img src="img/large/1.png" alt="img01"/>
+						</figure>
+					</li>
+					<li>
+						<figure>
+							<figcaption>
+								<h3>React JS</h3>
+								<p>Virtual DOM</p>
+							</figcaption>
+							<img src="img/large/1.png" alt="img01"/>
+						</figure>
+					</li>
+					<li>
+						<figure>
+							<figcaption>
+								<h3>Tower of hanoi</h3>
+								<p>http://march-dave.github.io/TowersofHanoi/</p>
+							</figcaption>
+							<img src="img/large/1.png" alt="img01"/>
+						</figure>
+					</li>
+				</ul>
 				<nav>
-					<a href="" class="bp-icon bp-icon-prev" data-info="previous Blueprint"><span>Previous Blueprint</span></a>
-					<a href="" class="bp-icon bp-icon-drop" data-info="back to the Codrops article"><span>back to the Codrops article</span></a>
-					<a href="" class="file" data-info="Blueprints archive"><span>Go to the archive</span></a>
+					<span class="icon nav-prev"></span>
+					<span class="icon nav-next"></span>
+					<span class="icon nav-close"></span>
 				</nav>
-			</header>
-			<div id="grid-gallery" class="grid-gallery">
-				<section class="grid-wrap">
-					<ul class="grid">
-						<li class="grid-sizer"></li><!-- for Masonry column width -->
-						<li>
-							<figure>
-								<img src="img/thumb/1.png" alt="img01"/>
-								<figcaption><h3>Angular JS</h3><p>Angular js, node js, mongo db, Firebase, Moach, chai</p></figcaption>
-							</figure>
-						</li>
-						<li>
-							<figure>
-								<img src="img/thumb/1.png" alt="img01"/>
-								<figcaption><h3>React JS</h3><p>React js, React native, Flux, Redux</p></figcaption>
-							</figure>
-						</li>
-						<li>
-							<figure>
-								<img src="img/thumb/1.png" alt="img01"/>
-								<figcaption><h3>Vanilla JS</h3><p>Vanilla JS, JSON, ES5, ES6, Html, CSS, jquery</p></figcaption>
-							</figure>
-						</li>
-					</ul>
-				</section><!-- // grid-wrap -->
-				<section class="slideshow">
-					<ul>
-						<li>
-							<figure>
-								<figcaption>
-									<h3>Angular JS</h3>
-									<p>Javascript MVC framework</p>
-								</figcaption>
-								<img src="img/large/1.png" alt="img01"/>
-							</figure>
-						</li>
-						<li>
-							<figure>
-								<figcaption>
-									<h3>React JS</h3>
-									<p>Virtual DOM</p>
-								</figcaption>
-								<img src="img/large/1.png" alt="img01"/>
-							</figure>
-						</li>
-						<li>
-							<figure>
-								<figcaption>
-									<h3>Tower of hanoi</h3>
-									<p>http://march-dave.github.io/TowersofHanoi/</p>
-								</figcaption>
-								<img src="img/large/1.png" alt="img01"/>
-							</figure>
-						</li>
-					</ul>
-					<nav>
-						<span class="icon nav-prev"></span>
-						<span class="icon nav-next"></span>
-						<span class="icon nav-close"></span>
-					</nav>
-					<div class="info-keys icon">Navigate with arrow keys</div>
-				</section><!-- // slideshow -->
-			</div><!-- // grid-gallery -->
-		</div>
-		<script src="js/imagesloaded.pkgd.min.js"></script>
-		<script src="js/masonry.pkgd.min.js"></script>
-		<script src="js/classie.js"></script>
-		<script src="js/cbpGridGallery.js"></script>
-		<script>
-			new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
-		</script>
-	</body>
+				<div class="info-keys icon">Navigate with arrow keys</div>
+			</section><!-- // slideshow -->
+		</div><!-- // grid-gallery -->
+	</div>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/cbpGridGallery.js"></script>
+	<script>
+	new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
+	</script>
+</body>
 </html>

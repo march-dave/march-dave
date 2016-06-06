@@ -1,6 +1,6 @@
 /* General Blueprint Style */
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
-/*@font-face {
+@font-face {
 	font-family: 'bpicons';
 	src:url('../fonts/bpicons/bpicons.eot');
 	src:url('../fonts/bpicons/bpicons.eot?#iefix') format('embedded-opentype'),
@@ -9,7 +9,7 @@
 		url('../fonts/bpicons/bpicons.svg#bpicons') format('svg');
 	font-weight: normal;
 	font-style: normal;
-} */
+}
 
 /* Made with http://icomoon.io/ */
 
