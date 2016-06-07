@@ -165,6 +165,18 @@ a:hover {
 	content: "\e004";
 }
 
+/*.bp-icon-email:after {
+	content: "\e005";
+}
+
+.bp-icon-about:after {
+	content: "\e006";
+}
+
+.bp-icon-envelope:after {
+	content: "\e007";
+}*/
+
 @media screen and (max-width: 55em) {
 
 	.container > header h1,
