@@ -1,199 +1,265 @@
-/* General Blueprint Style */
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
-@font-face {
-	font-family: 'bpicons';
-	src:url('../fonts/bpicons/bpicons.eot');
-	src:url('../fonts/bpicons/bpicons.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/bpicons/bpicons.woff') format('woff'),
-		url('../fonts/bpicons/bpicons.ttf') format('truetype'),
-		url('../fonts/bpicons/bpicons.svg#bpicons') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-/* Made with http://icomoon.io/ */
-
-*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-body, html { font-size: 100%; padding: 0; margin: 0;}
-
-/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
-.clearfix:before, .clearfix:after { content: " "; display: table; }
-.clearfix:after { clear: both; }
-
 body {
-    font-family: 'Lato', Calibri, Arial, sans-serif;
-    color: #47a3da;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    /*padding-top: 110px;*/
+
 }
 
-a {
-	color: #f0f0f0;
-	text-decoration: none;
-	outline: none;
+.navbar {
+    margin-bottom: 0px;
+    padding: 30px 15px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+@media (max-width: 400px) {
+    .navbar-header {
+        position: relative;
+    }
+    .navbar img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 70%;
+    }
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #bbb;
 }
 
-a:hover {
-	color: #000;
+
+.cbp-af-header-shrink {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    opacity: 0.9;
 }
 
-.container > header {
-	width: 90%;
-	max-width: 69em;
-	margin: 0 auto;
-	padding: 2.875em 1.875em 1.875em;
+.fill-screen {
+    background-size: cover;
+    background-position: center;
 }
 
-.container > header h1 {
-	font-size: 2.125em;
-	line-height: 1.3;
-	margin: 0 0 0.6em 0;
-	float: left;
-	font-weight: 400;
+.title-row {
+    position: relative;
+    min-height: 300px;
+}
+.title-image {
+    position: absolute;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
 }
 
-.container > header > span {
-	display: block;
-	position: relative;
-	z-index: 200;
-	font-weight: 700;
-	text-transform: uppercase;
-	letter-spacing: 0.5em;
-	padding: 0 0 0.6em 0.1em;
+.down-button {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    text-align: center;
+}
+.down-button i {
+    color: white;
 }
 
-.container > header > span span:after {
-	width: 30px;
-	height: 30px;
-	left: -12px;
-	font-size: 50%;
-	top: -8px;
-	font-size: 75%;
-	position: relative;
+.fixed-attachment {
+    background-attachment: fixed;
+}
+@media (max-width: 1024px){
+    .fixed-attachment {
+        background-attachment: scroll;
+    }
 }
 
-.container > header > span span:hover:before {
-	content: attr(data-content);
-	text-transform: none;
-	text-indent: 0;
-	letter-spacing: 0;
-	font-weight: 300;
-	font-size: 110%;
-	padding: 0.8em 1em;
-	line-height: 1.2;
-	text-align: left;
-	left: auto;
-	margin-left: 4px;
-	position: absolute;
-	color: #fff;
-	background: #47a3da;
+.text-banner {
+    text-align: center;
+    margin: 40px 20px;
+}
+.text-banner h1 {
+    font-size: 44px;
+}
+.text-banner p {
+    font-size: 18px;
 }
 
-.container > header nav {
-	float: right;
-	text-align: center;
+.activity-section {
+    margin: 50px;
+}
+.activity-element {
+    text-align: center;
+}
+.activity-element img {
+    width: 150px;
+    height: 150px;
 }
 
-.container > header nav a {
-	display: inline-block;
-	position: relative;
-	text-align: left;
-	width: 2.5em;
-	height: 2.5em;
-	background: #fff;
-	border-radius: 50%;
-	margin: 0 0.1em;
-	border: 4px solid #47a3da;
+#carousel {
+    margin: 40px 0px;
+}
+#carousel img {
+    width: 100%;
+    height: auto;
 }
 
-.container > header nav a > span {
-	display: none;
+.contact-us {
+    margin: 50px;
+    text-align: center;
 }
 
-.container > header nav a:hover:before {
-	content: attr(data-info);
-	color: #47a3da;
-	position: absolute;
-	width: 600%;
-	top: 120%;
-	text-align: right;
-	right: 0;
-	pointer-events: none;
+footer {
+    background-color: #333;
+    color: #ddd;
+    padding: 20px;
+    text-align: center;
 }
 
-.container > header nav a:hover {
-	background: #47a3da;
+aside {
+    background-color: #f7f7f7;
+    text-align: center;
+    padding-top: 40px;
 }
 
-.bp-icon:after {
-	font-family: 'bpicons';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	text-align: center;
-	color: #47a3da;
-	-webkit-font-smoothing: antialiased;
+.range-list {
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.range-list h4 {
+    margin-bottom: 40px;
+    color: darkorange;
+    font-weight: bold;
+}
+.range-list img {
+    width: 100%;
+    height: 100%;
+    max-width: 140px;
+    max-height: 60px;
+}
+.range-title {
+    color: darkblue;
 }
 
-.container > header nav .bp-icon:after {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	line-height: 2;
-	text-indent: 0;
+.sports-icon-list {
+    background-color: #333;
+    padding-bottom: 40px;
+}
+.sports-icon-list a {
+    color: white;
+}
+.sports-icon-list a h6 {
+    margin-top: 2px;
+    margin-bottom: 14px;
+}
+.sports-icon-list img {
+    width:70px;
+    height:70px;
 }
 
-.container > header nav a:hover:after {
-	color: #fff;
+.sports-list-top div {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
-.bp-icon-next:after {
-	content: "\e000";
-}
-.bp-icon-drop:after {
-	content: "\e001";
-}
-.bp-icon-archive:after {
-	content: "\e002";
-}
-.bp-icon-about:after {
-	content: "\e003";
-}
-.bp-icon-prev:after {
-	content: "\e004";
+.sports-list-top a {
+    margin-left: 30px;
+    margin-right: 30px;
+    display: inline-block;
 }
 
-/*.bp-icon-email:after {
-	content: "\e005";
+article {
+    padding: 40px;
+}
+article img {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    box-shadow: 6px 6px 8px #777;
+    margin-bottom: 20px;
+}
+article p {
+    font-size: 16px;
 }
 
-.bp-icon-about:after {
-	content: "\e006";
+@media (max-width: 767px) {
+
+    .range-list h4 {
+        display: inline;
+        font-size: 18px;
+    }
+
+    .range-list a {
+        display: block;
+    }
+
+    .range-list img {
+        width: 33%;
+        height: 33%;
+        margin-right: 10px;
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+
 }
 
-.bp-icon-envelope:after {
-	content: "\e007";
-}*/
 
-@media screen and (max-width: 55em) {
-
-	.container > header h1,
-	.container > header nav {
-		float: none;
-	}
-
-	.container > header > span,
-	.container > header h1 {
-		text-align: center;
-	}
-
-	.container > header nav {
-		margin: 0 auto;
-	}
-
-	.container > header > span {
-		text-indent: 30px;
-	}
+/* The following code is used to create same-sized columns
+   in a multi-column layout.
+   Code from:
+   http://www.minimit.com/articles/solutions-tutorials/bootstrap-3-responsive-columns-of-same-height
+*/
+/* columns of same height styles */
+.container-xs-height {
+    display:table;
+    padding-left:0px;
+    padding-right:0px;
+}
+.row-xs-height {
+    display:table-row;
+}
+.col-xs-height {
+    display:table-cell;
+    float:none;
+}
+@media (min-width: 768px) {
+    .container-sm-height {
+        display:table;
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .row-sm-height {
+        display:table-row;
+    }
+    .col-sm-height {
+        display:table-cell;
+        float:none;
+    }
+}
+@media (min-width: 992px) {
+    .container-md-height {
+        display:table;
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .row-md-height {
+        display:table-row;
+    }
+    .col-md-height {
+        display:table-cell;
+        float:none;
+    }
+}
+@media (min-width: 1200px) {
+    .container-lg-height {
+        display:table;
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .row-lg-height {
+        display:table-row;
+    }
+    .col-lg-height {
+        display:table-cell;
+        float:none;
+    }
 }
