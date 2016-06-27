@@ -58,5 +58,23 @@ app.use(function(err, req, res, next) {
   });
 });
 
+// var SendGrid = require('./lib/sendgrid');
+// app.get('/', function(req, res, next) {
+//
+//   console.log('sdjfsdjflkjsdflkjasdlfjasdljfsd');
+//
+//   let jobAppArr = {};
+//   jobAppArr  = {
+//       userEmail : 'dac.davelee@gmail.com',
+//       subject : 'march-dave website tracking',
+//       message : 'march-dave: ' + Date.now()
+//   };
+//
+//   SendGrid.sendGridNotification(jobAppArr, (err, returnValue) => {
+//       if (err) { console.log(err); }
+//   });
+//
+// });
+
 
 module.exports = app;
