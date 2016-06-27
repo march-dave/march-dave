@@ -58,7 +58,7 @@ app.use(function(err, req, res, next) {
   });
 });
 
-// var SendGrid = require('./lib/sendgrid');
+
 // app.get('/', function(req, res, next) {
 //
 //   console.log('sdjfsdjflkjsdflkjasdlfjasdljfsd');
