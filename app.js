@@ -1,5 +1,7 @@
 "use strict";
 
+require('dotenv').load();
+
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -57,24 +59,5 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
-
-
-// app.get('/', function(req, res, next) {
-//
-//   console.log('sdjfsdjflkjsdflkjasdlfjasdljfsd');
-//
-//   let jobAppArr = {};
-//   jobAppArr  = {
-//       userEmail : 'dac.davelee@gmail.com',
-//       subject : 'march-dave website tracking',
-//       message : 'march-dave: ' + Date.now()
-//   };
-//
-//   SendGrid.sendGridNotification(jobAppArr, (err, returnValue) => {
-//       if (err) { console.log(err); }
-//   });
-//
-// });
-
 
 module.exports = app;
