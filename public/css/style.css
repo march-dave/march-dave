@@ -7,7 +7,6 @@ body {
 
 .navbar {
     margin-bottom: 0px;
-    padding: 30px 15px;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
@@ -70,6 +69,18 @@ body {
     .fixed-attachment {
         background-attachment: scroll;
     }
+}
+
+hr.small {
+    max-width: 150px;
+}
+
+.text-banner-top {
+    text-align: center;
+    /*margin: 40px 0px;*/
+    padding: 40px 0px;
+    background-color: #3F51B5;
+    color: #ffffff;
 }
 
 .text-banner {

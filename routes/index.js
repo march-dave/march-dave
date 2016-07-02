@@ -15,9 +15,9 @@ router.get('/', function(req, res, next) {
     message : 'march-dave website someone visited'
   };
 
-  SendGrid.sendGridNotification(jobAppArr, (err, returnValue) => {
-    if (err) { console.log(err); }
-  });
+  // SendGrid.sendGridNotification(jobAppArr, (err, returnValue) => {
+  //   if (err) { console.log(err); }
+  // });
 
   res.render('index', { title: 'Express' });
 });
